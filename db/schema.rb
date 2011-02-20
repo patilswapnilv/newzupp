@@ -10,12 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110220143100) do
+ActiveRecord::Schema.define(:version => 20110220143822) do
 
   create_table "sites", :force => true do |t|
     t.string   "name"
     t.string   "url"
     t.string   "shortname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stories", :force => true do |t|
+    t.integer  "site_id"
+    t.string   "title"
+    t.string   "url"
+    t.string   "url_hash"
+    t.string   "site_name"
+    t.integer  "digg",        :default => 0
+    t.integer  "reddit",      :default => 0
+    t.integer  "tweetmeme",   :default => 0
+    t.integer  "hn",          :default => 0
+    t.integer  "facebook",    :default => 0
+    t.integer  "total_count", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
