@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110220143822) do
+ActiveRecord::Schema.define(:version => 20110220144811) do
 
   create_table "sites", :force => true do |t|
     t.string   "name"
@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(:version => 20110220143822) do
     t.string   "shortname"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "top_stories_endpoint"
+    t.string   "search_endpoint"
+    t.string   "story_details_endpoint"
   end
 
   create_table "stories", :force => true do |t|
