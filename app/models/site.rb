@@ -13,13 +13,14 @@ class Site < ActiveRecord::Base
   # Update all sites, fetch front page stories and update votes for front page stories
   def self.update_front_page
     # Fetch stories from sites
+    start_time = Time.now
     front_page_stories = []
     Site.all.each do |site|
       # Fetch stories from sites
       site.fetch_and_save_stories
       # Update votes from other sites
       site.update_from_other_sites
-      front_page_stories << Story.unscoped.where(:site_name => site.shortname).order("#{site.shortname} DESC").limit(5)
+      front_page_stories << Story.unscoped.where("site_name = ? AND updated_at > ?", site.shortname, start_time).order("total_count DESC").limit(5)
     end
     front_page_stories.flatten.uniq.each do |story|
       story.update_tweetmeme_count unless story.site_name == "tweetmeme"

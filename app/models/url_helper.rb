@@ -23,5 +23,4 @@ module UrlHelper
     response.body
   end
 
-
 end
