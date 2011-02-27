@@ -12,6 +12,10 @@
           <span class="title"><%= story.title %></span>
           <% if @home %> - <span class="site"><%= story.site.name.humanize %></span><% end %>
         </a>
+        <span class="scores">Facebook Likes: <%= story.facebook %>, Diggs: <%= story.digg %>,
+                          Tweets: <%= story.tweetmeme %>, Reddit Score: <%= story.reddit %>,
+                          HackerNews Score: <%= story.hn %>
+        </span>
         <!--<span class="updated">2 minutes ago</span>-->
       </p>
     </li>
