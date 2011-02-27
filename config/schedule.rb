@@ -20,6 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 
 every 10.minutes do
-  runner "Site.update_front_page" , :environment => :production
+  runner "Site.update_front_page" , :environment => :staging
 end
 
