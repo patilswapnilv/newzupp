@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110220151556) do
+ActiveRecord::Schema.define(:version => 20110222095507) do
+
+  create_table "front_page_stories", :force => true do |t|
+    t.integer  "front_page_id"
+    t.integer  "story_id"
+    t.integer  "score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "front_pages", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sites", :force => true do |t|
     t.string   "name"
@@ -23,6 +36,8 @@ ActiveRecord::Schema.define(:version => 20110220151556) do
     t.string   "story_details_endpoint"
     t.integer  "update_status"
     t.string   "score_name"
+    t.datetime "last_updated"
+    t.boolean  "api_status",             :default => true
   end
 
   create_table "stories", :force => true do |t|

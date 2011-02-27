@@ -1,0 +1,27 @@
+<%= render :partial => "shared/header" %>
+
+<div class="clear"></div>
+
+<div class="container">
+
+  <div class="content">
+
+    <div class="stories-container" id="stories_list">
+
+      <div class="stories">
+        <h1>
+          <%= @title %>
+          <span>Last updated <%= time_ago_in_words(@page.updated_at) %></span>
+        </h1>
+        <%= render :partial => "stories" %>
+      </div>
+
+    </div>
+
+    <br style="clear: both;">
+
+  </div>
+</div>
+
+<%= render :partial => "shared/footer" %>
+

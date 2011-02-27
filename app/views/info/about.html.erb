@@ -1,0 +1,35 @@
+<%= render :partial => "shared/header" %>
+
+<div class="clear"></div>
+
+<div class="container">
+
+  <div class="content">
+
+    <div class="info-container" id="info_list">
+
+      <div class="info">
+        <h1>About Newzupp</h1>
+
+        <h2>Start</h2>
+        <p>Something about start</p>
+        <h2>Tools used</h2>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>MySQL</li>
+            <li>Apache + Passenger on Linode 512</li>
+            <li>Vim for coding</li>
+          </ul>
+        <h2>Source Code</h2>
+        <p>Source code is hosted on Github - <%= link_to "Link", %></p>
+      </div>
+
+    </div>
+
+    <br style="clear: both;">
+
+  </div>
+</div>
+
+<%= render :partial => "shared/footer" %>
+

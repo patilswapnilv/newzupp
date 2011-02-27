@@ -1,15 +1,17 @@
 class Story < ActiveRecord::Base
-  
+
   include UrlHelper
 
   HN_SEARCH_ENDPOINT = "http://api.ihackernews.com/getid?url="
   HN_POST_DETAILS_ENDPOINT = "http://api.ihackernews.com/post/"
   REDDIT_SEARCH_ENDPOINT = "http://www.reddit.com/api/info.json?url="
 
-  default_scope :order => "created_at desc"
+  #default_scope :order => "updated_at desc"
 
   # Associations
   belongs_to :site
+  has_many :front_page_stories
+  has_many :front_pages, :through => :front_page_stories
 
   def self.find_or_create_story(site_id, site_name, url, title, score)
     url_hash = create_hash(url)
@@ -31,7 +33,7 @@ class Story < ActiveRecord::Base
       else
         hn_post_id = result[0]
         post_details_url = HN_POST_DETAILS_ENDPOINT + hn_post_id.to_s
-        begin 
+        begin
           result = JSON.parse(get_http_response(post_details_url))
           hn_points = result["points"]
           update_attribute("hn", hn_points.to_i)
@@ -71,7 +73,7 @@ class Story < ActiveRecord::Base
       logger.error "Unable to fetch facebook likes for #{url}"
     end
   end
- 
+
   def update_tweetmeme_count
     post_detail_url = "http://api.tweetmeme.com/url_info.xml?url=#{url}"
     begin
@@ -92,3 +94,4 @@ class Story < ActiveRecord::Base
   end
 
 end
+

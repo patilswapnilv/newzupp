@@ -1,0 +1,21 @@
+<ul>
+  <% @stories.each do |story| %>
+
+    <li>
+      <p class="details">
+        <span class="score"><% if @home %>
+                              <%= story.total_count %>
+                            <% else %>
+                              <%= story.try @page.shortname %>
+                            <% end %></span>
+        <a href=<%=story.url%> target=blank>
+          <span class="title"><%= story.title %></span>
+          <% if @home %> - <span class="site"><%= story.site.name.humanize %></span><% end %>
+        </a>
+        <!--<span class="updated">2 minutes ago</span>-->
+      </p>
+    </li>
+
+  <% end %>
+</ul>
+

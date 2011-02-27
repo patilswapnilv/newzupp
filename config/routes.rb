@@ -1,4 +1,21 @@
 NewzuppCrawler::Application.routes.draw do
+
+  root :to => "stories#home"
+
+  match "/digg" => "stories#digg"
+
+  match "/reddit" => "stories#reddit"
+
+  match "/tweetmeme" => "stories#tweetmeme"
+
+  match "/hackernews" => "stories#hackernews"
+
+  match "/stats" => "info#stats"
+
+  match "/about" => "info#about"
+
+  match "/roadmap" => "info#roadmap"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,3 +73,4 @@ NewzuppCrawler::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+

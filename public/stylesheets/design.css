@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+a:active {
+  outline: none;
+}
+
+img {
+  border: 0;
+}
+
+div.clear {
+  clear: both;
+}
+
+div.container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------
+HEADER
+--------------------------------------------- */
+
+div.header {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 15px 0;
+}
+
+body div.header-container {
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  padding: 0;
+  width: 860px;
+}
+
+div.header-container h2 {
+  float: left;
+  margin: -4px 0 0 18px;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 0;
+  text-shadow:0 2px 0 #fff;
+  letter-spacing: -1px;
+}
+
+div.header-container h2 a {
+  color: #000;
+}
+
+div.header-container h2 a:hover {
+  text-decoration: none;
+}
+
+div.header-container p {
+  float: left;
+  font-size: 12px;
+  padding: 10px;
+  margin: 0;
+  line-height: 1.4em;
+  text-align: center;
+  color: #444;
+  width: 490px;
+  border: 1px solid #c1cad9;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* ---------------------------------------------
+NAV
+--------------------------------------------- */
+
+div.nav {
+  margin: 5px auto 0;
+  overflow: hidden;
+}
+
+div.nav form#search_form input {
+  float: left;
+  margin: 15px 15px 0 2px;
+  font-size: 14px;
+  padding: 3px 10px 3px 20px;
+  background: url(/images/icon-search.png) 5px 6px no-repeat #fff;
+  cursor: auto;
+  width: 300px;
+}
+
+div.site-link {
+  float: right;
+  line-height: normal;
+  margin: 12px 0 0 10px;
+}
+
+div.site-link a {
+  display: block;
+  padding: 8px 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  text-shadow:0 1px 0 #669900;
+  font-weight: bold;
+  background-color: #7cb210;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-decoration: underline;
+}
+
+div.site-link a:hover {
+  background-color: #8bc810;
+}
+
+div.site-link a span {
+  font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: none;
+  font-size: 10px;
+  line-height: normal;
+}
+
+div.site-link a:hover {
+  text-decoration: none;
+}
+
+/* ---------------------------------------------
+STORIES
+--------------------------------------------- */
+
+div.stories-container, div.info-container {
+  overflow: hidden;
+  width: 860px;
+  padding: 5px 5px 3px 10px;
+  margin: 20px auto 30px auto;
+}
+
+div.stories, div.info {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 15px 3px 3px 3px;
+}
+
+div.stories h1, div.info h1 {
+  font-size: 21px;
+  color: #222;
+  padding: 5px 0 0 0;
+  margin: 0 0 13px 0;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+div.stories h1 a {
+  color: #222;
+}
+
+div.stories h1 a:hover {
+  text-decoration: none;
+}
+
+div.stories h1 span {
+  font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #948B6E;
+  margin-left: 10px;
+  letter-spacing: normal;
+}
+
+div.stories h1 img.feed {
+  float: right;
+  border: 0;
+  margin-top: 3px;
+}
+
+div.stories ul {
+  margin: 0 0 0 35px;
+  padding: 0;
+}
+
+div.stories ul li {
+  list-style-type: none;
+  font-size: 13px;
+  margin: 0;
+  height: auto;
+}
+
+div.stories ul li p.details{
+  border-bottom: 1px solid #e8e8e8;
+}
+
+div.stories ul li p span.score {
+  float: left;
+  position: relative;
+  left: -35px;
+  top: 10px;
+  background-color: #1ca3f1;
+  font-weight: bold;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: -35px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+div.stories ul li p a {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  color: #888;
+}
+
+div.stories ul li p a:hover {
+  text-decoration: none;
+  background-color: #efebe3;
+}
+
+
+div.stories ul li p a span.title {
+  color: #000;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+div.stories ul li p span.site {
+  color: #000;
+  font-weight: normal;
+  margin-left: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.stories ul li p span.updated {
+  color: #948B6E;
+  font-weight: normal;
+  float: right;
+  font-style: italic;
+}
+
+/* ---------------------------------------------
+Info
+--------------------------------------------- */
+
+div.info {
+  font-size: 14px;
+  min-height: 350px;
+  padding-left: 10px;
+
+}
+div.info h2 {
+  font-size: 16px;
+  color: #222;
+  padding: 5px 0 0 0;
+  margin: 0 0 13px 0;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 1em;
+}
+
+div.info table{
+  margin: 5px 0px 0px 20px;
+}
+
+div.info td {
+  min-width: 120px;
+}
+
+
+/* ---------------------------------------------
+FOOTER
+--------------------------------------------- */
+
+div.footer {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+div.footer-container {
+  overflow: hidden;
+  margin: 0 auto 40px auto;
+  width: 860px;
+  padding: 10px 0;
+}
+
+div.footer-container p {
+  font-size: 10px;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+div.footer-container p a:hover, div.footer-container p a {
+  color: #06C;
+  text-decoration: underline;
+}
+
+div.footer-details {
+  float: right;
+  text-align: right;
+}
+
