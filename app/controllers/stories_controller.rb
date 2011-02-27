@@ -10,28 +10,28 @@ class StoriesController < ApplicationController
   def digg
     @page = Site.where(:shortname => "digg").first
     @stories = @page.stories.order("updated_at DESC").limit(20)
-    @title = "Popular stories on Digg"
+    @title = "Digg - Popular Stories"
     render :home
   end
 
   def reddit
     @page = Site.where(:shortname => "reddit").first
     @stories = @page.stories.order("updated_at DESC").limit(20)
-    @title = "Popular stories on Reddit"
+    @title = "Reddit - Popular Stories"
     render :home
   end
 
   def tweetmeme
     @page = Site.where(:shortname => "tweetmeme").first
     @stories = @page.stories.order("updated_at DESC").limit(20)
-    @title = "Popular stories on Tweetmeme"
+    @title = "Tweetmeme - Popular Stories"
     render :home
   end
 
   def hackernews
     @page = Site.where(:shortname => "hn").first
     @stories = @page.stories.order("updated_at DESC").limit(20)
-    @title = "Popular stories on HackerNews"
+    @title = "HackerNews - Popular Stories"
     render :home
   end
 
