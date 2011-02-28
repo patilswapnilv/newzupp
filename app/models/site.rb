@@ -84,13 +84,5 @@ class Site < ActiveRecord::Base
     front_page.stories << front_page_stories
   end
   
-  def self.expire_cached_pages
-    expire_page(:controller => 'stories', :action => 'home')
-    expire_page(:controller => 'stories', :action => 'digg')
-    expire_page(:controller => 'stories', :action => 'reddit')
-    expire_page(:controller => 'stories', :action => 'tweetmeme')
-    expire_page(:controller => 'stories', :action => 'hackernews')
-  end
-
 end
 
