@@ -8,9 +8,11 @@ Deployed on Linode 512 MB server using Apache and Passenger.
 
 ### Roadmap
 
-=> Optimize front page logic.
-=> Add user registration functionality.
-=> Make it more realtime.
-=> Make the experience more visual.
-=> Include more sites/social networks.
+- Optimize front page logic.
+- Add user registration functionality.
+- Make it more realtime.
+- Make the experience more visual.
+- Include more sites/social networks.
 
+### About Me
+My name is Jigar Patel. I am an engineer from New Delhi, India. My areas of interest are Health Care Analytics and Web Trend Analytics.
