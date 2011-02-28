@@ -11,7 +11,7 @@
       <div class="stories">
         <h1>
           <%= @title %>
-          <span>Last updated <%= time_ago_in_words(@page.updated_at) %></span>
+          <span>Last updated <%= time_ago_in_words(@page.updated_at) %> ago</span>
         </h1>
         <%= render :partial => "stories" %>
       </div>
