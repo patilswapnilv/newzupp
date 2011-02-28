@@ -1,7 +1,5 @@
 class StoriesController < ApplicationController
 
-  caches_page :home, :digg, :reddit, :tweetmeme, :hackernews
-
   def home
     @page = FrontPage.first
     @stories = @page.stories.order("total_count DESC")
