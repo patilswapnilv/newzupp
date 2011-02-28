@@ -14,5 +14,5 @@ Deployed on Linode 512 MB server using Apache and Passenger.
 - Make the experience more visual.
 - Include more sites/social networks.
 
-### About Me
-My name is Jigar Patel. I am an engineer from New Delhi, India. My areas of interest are Health Care Analytics and Web Trend Analytics.
+### About
+Creater by Jigar Patel.
