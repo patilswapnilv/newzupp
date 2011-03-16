@@ -27,6 +27,14 @@ div.clear {
   clear: both;
 }
 
+#user_nav {
+  overflow: hidden;
+  padding-top: 10px;
+  margin: auto;
+  width: 860px;
+  text-align: right;
+}
+
 div.container {
   overflow: hidden;
   width: 100%;

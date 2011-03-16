@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110222095507) do
+ActiveRecord::Schema.define(:version => 20110316115606) do
 
   create_table "front_page_stories", :force => true do |t|
     t.integer  "front_page_id"
@@ -52,6 +52,14 @@ ActiveRecord::Schema.define(:version => 20110222095507) do
     t.integer  "hn",          :default => 0
     t.integer  "facebook",    :default => 0
     t.integer  "total_count", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
