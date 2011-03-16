@@ -13,7 +13,12 @@
     <% else %>  
       <%= link_to "Sign in with Facebook", "/auth/facebook" %>  
     <% end %>
-  </div>  
+  </div>
+  <% if flash[:notice] %>
+    <div id="notice">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
 <%= yield %>
 
 </body>

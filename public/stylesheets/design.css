@@ -31,8 +31,18 @@ div.clear {
   overflow: hidden;
   padding-top: 10px;
   margin: auto;
+  margin-bottom: 15px;
   width: 860px;
   text-align: right;
+}
+
+#notice {
+  overflow: hidden;
+  padding: 5px;
+  margin: auto;
+  width: 860px;
+  background-color: #F2F2F2;
+  border: 1px solid #ccc;
 }
 
 div.container {
