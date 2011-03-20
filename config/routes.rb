@@ -1,5 +1,9 @@
 NewzuppCrawler::Application.routes.draw do
-
+  constraints(:host => "www.newzupp.com") do
+    match "(*x)" => redirect { |params, request|
+      URI.parse(request.url).tap { |x| x.host = "newzupp.com" }.to_s
+    }
+  end
   root :to => "stories#home"
 
   match "/digg" => "stories#digg"
