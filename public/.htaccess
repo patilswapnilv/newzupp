@@ -1,4 +1,0 @@
-RewriteEngine on 
-RewriteCond %{HTTP_HOST} ^www\.newzupp\.com 
-RewriteRule ^(.*)$http://newzupp.com/$1 [R=301, L] 
-
