@@ -18,4 +18,4 @@ Deployed on Linode 512 MB server using Apache and Passenger.
 - Include more sites/social networks.
 
 ### About
-Creater by Jigar Patel.
+Created by Jigar Patel.
