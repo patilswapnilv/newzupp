@@ -2,7 +2,7 @@
 
 Newzupp is an online news aggregator, which aggregates news from various social sites. My vision is to create a dashboard from where once can see the popular links/trends/keywords in realtime. (~ pulse of the web)
 
-![Newzupp Home Page](http://jigarpatel.in/images/work/newzupp.jpg)
+![Newzupp Home Page](https://raw.githubusercontent.com/jagira/old.jagira.github.com/master/images/work/newzupp.jpg)
 
 
 ### Stack
